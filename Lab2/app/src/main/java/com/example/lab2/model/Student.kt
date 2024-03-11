@@ -6,5 +6,5 @@ import java.util.UUID
 
 @Entity
 data class Student(@PrimaryKey val id:UUID=UUID.randomUUID(),
-    var fio:String="",var group:String="",var year:Int,
-    var phys:Int,var mathem:Int,var info:Int)
+                   val name:String,val group:String,
+    val birthYear:Int,val phis:Int,val math:Int,val inf:Int)

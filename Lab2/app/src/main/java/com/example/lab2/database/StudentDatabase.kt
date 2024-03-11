@@ -6,7 +6,7 @@ import androidx.room.TypeConverters
 import com.example.lab2.model.Student
 
 @Database(entities = [Student::class], version = 1)
-@TypeConverters(StudentTypeConverter::class)
+@TypeConverters(StudentTypeConvertor::class)
 abstract class StudentDatabase:RoomDatabase() {
     abstract fun studentDao():StudentDao
 }
