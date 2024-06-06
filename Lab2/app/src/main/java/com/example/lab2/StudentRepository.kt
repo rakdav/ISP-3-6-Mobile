@@ -43,6 +43,7 @@ class StudentRepository private constructor(context:Context)
                 INSTANCE = StudentRepository(context)
             }
         }
+
         fun get(): StudentRepository {
             return INSTANCE ?: throw IllegalStateException("StudentRepository must be init")
         }
